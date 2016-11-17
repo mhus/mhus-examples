@@ -13,4 +13,6 @@
     <inherits name="org.vaadin.addons.portallayout.gwt.PortalLayoutWidgetSet" />
 
     <inherits name="org.vaadin.sliderpanel.WidgetSet" />
+
+    <inherits name="org.vaadin.miki.flatselect.WidgetSet" />
 </module>

@@ -18,6 +18,10 @@ import de.mhus.osgi.vaadinbridge.VaadinConfigurableResourceProviderFinder;
 @VaadinServletConfiguration(ui=SampleUI.class, productionMode=true)
 public class SampleServlet extends VaadinServlet {
 
+	static {
+	      System.setProperty("java.awt.headless", "true");
+	    }
+	
 	private static final long serialVersionUID = 1L;
 
 }

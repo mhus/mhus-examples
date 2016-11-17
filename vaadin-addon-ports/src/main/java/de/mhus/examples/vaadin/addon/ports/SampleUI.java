@@ -54,9 +54,14 @@ public class SampleUI extends UI {
 		tabs.addTab(createEasyUploads(), "EasyUploads");
 		tabs.addTab(new AceEditorTab(), "AceEditor");
 		tabs.addTab(createBorderLayout(), "BorderLayout");
-		tabs.addTab(new JFreeChartTab(), "jFreeChart");
+		try {
+			tabs.addTab(new JFreeChartTab(), "jFreeChart");
+		} catch (Throwable t) {
+			t.printStackTrace();
+		}
 		tabs.addTab(new PortalLayoutTab(), "PortalLayot");
 		tabs.addTab(new SliderPanelTab(), "SliderPanel");
+		tabs.addTab(new FlatSelectTab(), "Flatselect");
 	}
 
 	private Component createBorderLayout() {
