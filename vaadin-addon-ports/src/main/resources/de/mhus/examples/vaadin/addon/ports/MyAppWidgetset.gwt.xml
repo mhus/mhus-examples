@@ -15,4 +15,6 @@
     <inherits name="org.vaadin.sliderpanel.WidgetSet" />
 
     <inherits name="org.vaadin.miki.flatselect.WidgetSet" />
+
+    <inherits name="org.vaadin.alump.labelbutton.WidgetSet" />
 </module>

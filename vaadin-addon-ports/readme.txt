@@ -17,6 +17,7 @@ install -s mvn:de.mhus.ports/vaadin-jfreechart/1.3.1-SNAPSHOT
 install -s mvn:de.mhus.ports/vaadin-portallayout/1.3.1-SNAPSHOT
 install -s mvn:de.mhus.ports/vaadin-sliderpanel/1.3.1-SNAPSHOT
 install -s mvn:de.mhus.ports/vaadin-flatselect/1.3.1-SNAPSHOT
+install -s mvn:de.mhus.ports/vaadin-labelbutton/1.3.1-SNAPSHOT
 
 install -s 
 

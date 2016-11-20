@@ -39,7 +39,9 @@ public class FlatSelectTab extends VerticalLayout implements Component {
 	        container.addComponent(layout);
 	        addComponent(container);
 	        
-	        container.addComponent(new Button("Button"));
+	        Button b = new Button("Button");
+	        b.setStyleName("demoContentLayout");
+	        container.addComponent(b);
 		}
 		{
 			HorizontalLayout container = new HorizontalLayout();
@@ -59,7 +61,9 @@ public class FlatSelectTab extends VerticalLayout implements Component {
 	        container.addComponent(layout);
 	        addComponent(container);
 
-	        container.addComponent(new Button("Button"));
+	        Button b = new Button("Button");
+	        b.addStyleName("flatselectable");
+	        container.addComponent(b);
 		}
 		{
 			HorizontalLayout container = new HorizontalLayout();
@@ -81,7 +85,8 @@ public class FlatSelectTab extends VerticalLayout implements Component {
 	        container.addComponent(layout);
 	        addComponent(container);
 
-	        container.addComponent(new Button("Button"));
+	        Button b = new Button("Button");
+	        container.addComponent(b);
 	        
 	        component.addClickListener(new Button.ClickListener() {
 				
