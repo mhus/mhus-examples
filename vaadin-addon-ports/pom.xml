@@ -208,13 +208,7 @@
 			<artifactId>vaadin-flatselect</artifactId>
 			<version>${ports.version}</version>
         </dependency>
-        
-        <dependency>
-			<groupId>de.mhus.ports</groupId>
-			<artifactId>vaadin-labelbutton</artifactId>
-			<version>${ports.version}</version>
-        </dependency>
-        
+                
     </dependencies>
       
 </project>
