@@ -63,6 +63,8 @@ public class SampleUI extends UI {
 		tabs.addTab(new SliderPanelTab(), "SliderPanel");
 		tabs.addTab(new FlatSelectTab(), "Flatselect");
 		tabs.addTab(new LabelButtonTab(), "LabelButton");
+		tabs.addTab(new ContextMenuButtonTab(), "ContextMenu");
+		
 	}
 
 	private Component createBorderLayout() {
