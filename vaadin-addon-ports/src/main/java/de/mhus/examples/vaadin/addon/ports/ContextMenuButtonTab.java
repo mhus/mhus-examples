@@ -13,28 +13,30 @@ public class ContextMenuButtonTab extends VerticalLayout implements Component {
 
 	public ContextMenuButtonTab() {
 		Button b = new Button("Click");
+		
+		ContextMenu menu = new ContextMenu();
+
+		// Generate main level items
+		ContextMenuItem photos = menu.addItem("Photos");
+		ContextMenuItem albums = menu.addItem("Albums");
+		ContextMenuItem report = menu.addItem("Report");
+
+		// Generate sub item to photos menu
+		ContextMenuItem topRated = photos.addItem("Top rated");
+
+		photos.setIcon(FontAwesome.PHOTO);
+
+		// Enable separator line under this item
+		photos.setSeparatorVisible(true);
+		
+		menu.setAsContextMenuOf(b);
+		
+		
 		b.addClickListener(new Button.ClickListener() {
 			
 			@Override
 			public void buttonClick(ClickEvent event) {
-				
-				ContextMenu menu = new ContextMenu();
-
-				// Generate main level items
-				ContextMenuItem photos = menu.addItem("Photos");
-				ContextMenuItem albums = menu.addItem("Albums");
-				ContextMenuItem report = menu.addItem("Report");
-
-				// Generate sub item to photos menu
-				ContextMenuItem topRated = photos.addItem("Top rated");
-
-				photos.setIcon(FontAwesome.PHOTO);
-
-				// Enable separator line under this item
-				photos.setSeparatorVisible(true);
-				
-				menu.open(b);
-				
+					menu.open(0,0);			
 			}
 		});
 		addComponent(b);
