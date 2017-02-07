@@ -39,13 +39,25 @@ import com.vaadin.ui.Component;
  */
 @Theme("vaadinaddons")
 @Widgetset("de.mhus.examples.vaadin.addon.ports.MyAppWidgetset")
+@Push
 public class SampleUI extends UI {
 
 	private static final long serialVersionUID = 1L;
-	private VerticalLayout panelContnent;
 
 	@Override
 	protected void init(VaadinRequest request) {
+		
+		String uri = getPage().getUriFragment();
+		if (uri == null) {} else
+		if (uri.startsWith("!imagebrowser?")) {
+			setContent(new ImageBrowser());
+			return;
+		} else
+		if (uri.startsWith("!linkbrowser?")) {
+			setContent(new LinkBrowser());
+			return;
+		}
+		
 		
 		TabSheet tabs = new TabSheet();
 		tabs.setSizeFull();
@@ -64,6 +76,9 @@ public class SampleUI extends UI {
 		tabs.addTab(new FlatSelectTab(), "Flatselect");
 		tabs.addTab(new LabelButtonTab(), "LabelButton");
 		tabs.addTab(new ContextMenuButtonTab(), "ContextMenu");
+		tabs.addTab(new PushTab(), "Push");
+		tabs.addTab(new RefresherTab(), "Refresher");
+		tabs.addTab(new CKEditorTab(), "CKEditor");
 		
 	}
 

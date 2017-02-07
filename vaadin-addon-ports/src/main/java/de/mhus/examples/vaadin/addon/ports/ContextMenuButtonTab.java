@@ -36,7 +36,7 @@ public class ContextMenuButtonTab extends VerticalLayout implements Component {
 			
 			@Override
 			public void buttonClick(ClickEvent event) {
-					menu.open(0,0);			
+					menu.open(0,0);
 			}
 		});
 		addComponent(b);
