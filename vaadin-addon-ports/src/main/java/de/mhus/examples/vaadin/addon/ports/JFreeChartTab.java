@@ -2,10 +2,6 @@ package de.mhus.examples.vaadin.addon.ports;
 
 import java.awt.Color;
 import java.awt.GradientPaint;
-import java.io.IOException;
-import java.util.Collection;
-import java.util.List;
-import java.util.Locale;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -24,24 +20,10 @@ import org.jfree.data.statistics.Regression;
 import org.jfree.data.xy.DefaultTableXYDataset;
 import org.jfree.data.xy.DefaultXYDataset;
 import org.jfree.data.xy.XYSeries;
-import org.jsoup.nodes.Element;
 import org.vaadin.jfreechart.JFreeChartContainer;
 
-import com.vaadin.server.ClientMethodInvocation;
-import com.vaadin.server.ErrorHandler;
-import com.vaadin.server.Extension;
-import com.vaadin.server.Resource;
-import com.vaadin.server.ServerRpcManager;
-import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinResponse;
-import com.vaadin.shared.communication.SharedState;
 import com.vaadin.ui.Component;
-import com.vaadin.ui.HasComponents;
-import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.declarative.DesignContext;
-
-import elemental.json.JsonObject;
 
 public class JFreeChartTab extends VerticalLayout {
 

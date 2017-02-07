@@ -1,18 +1,7 @@
 package de.mhus.examples.vaadin.addon.ports;
 
 import java.io.File;
-import java.util.Date;
-import java.util.Timer;
-import java.util.TimerTask;
 
-import org.osgi.framework.Bundle;
-import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
-import org.vaadin.aceeditor.AceEditor;
-import org.vaadin.aceeditor.AceMode;
-import org.vaadin.aceeditor.client.AceAnnotation.Type;
-import org.vaadin.aceeditor.client.AceMarker;
-import org.vaadin.aceeditor.client.AceRange;
 import org.vaadin.addon.borderlayout.BorderLayout;
 import org.vaadin.easyuploads.ImagePreviewField;
 import org.vaadin.easyuploads.MultiFileUpload;
@@ -23,13 +12,12 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Component;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.Panel;
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Component;
 
 /*
  * 

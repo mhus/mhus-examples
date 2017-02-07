@@ -1,24 +1,19 @@
 package de.mhus.examples.vaadin.addon.ports;
 
+import org.vaadin.addons.portallayout.event.PortletCloseEvent;
+import org.vaadin.addons.portallayout.event.PortletCollapseEvent;
 import org.vaadin.addons.portallayout.portal.PortalBase;
+import org.vaadin.addons.portallayout.portal.StackPortalLayout;
+import org.vaadin.addons.portallayout.portlet.Portlet;
 
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Component;
-import com.vaadin.ui.Embedded;
-import com.vaadin.ui.Field.ValueChangeEvent;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.NativeSelect;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
-
-import org.vaadin.addons.portallayout.event.PortletCloseEvent;
-import org.vaadin.addons.portallayout.event.PortletCollapseEvent;
-import org.vaadin.addons.portallayout.portal.PortalBase;
-import org.vaadin.addons.portallayout.portal.StackPortalLayout;
-import org.vaadin.addons.portallayout.portlet.Portlet;
 
 public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener, PortletCollapseEvent.Listener {
 	

@@ -2,11 +2,10 @@ package de.mhus.examples.vaadin.addon.ports;
 
 import com.vaadin.server.Page;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Label;
-import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Button.ClickEvent;
 
 public class LinkBrowser extends VerticalLayout implements Component {
 
