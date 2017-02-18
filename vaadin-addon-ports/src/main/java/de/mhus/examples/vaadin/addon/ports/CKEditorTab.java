@@ -7,6 +7,7 @@ import com.vaadin.data.Property;
 import com.vaadin.data.Property.ValueChangeEvent;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.VerticalLayout;
 
@@ -19,9 +20,10 @@ public class CKEditorTab extends VerticalLayout implements Component {
         CKEditorConfig config = new CKEditorConfig();
         config.useCompactTags();
         config.disableElementsPath();
-        config.setResizeDir(CKEditorConfig.RESIZE_DIR.HORIZONTAL);
+        config.setResizeDir(CKEditorConfig.RESIZE_DIR.BOTH);
         config.disableSpellChecker();
         config.setWidth("100%");
+        config.setHeight("400px");
         config.setFilebrowserImageBrowseLinkUrl("/");
         config.setFilebrowserImageBrowseUrl("/vaadinaddons#!imagebrowser");
         config.setFilebrowserImageUploadUrl("/");
@@ -35,9 +37,12 @@ public class CKEditorTab extends VerticalLayout implements Component {
             public void valueChange(ValueChangeEvent event) {
                 Notification.show("CKEditor v" + ckEditorTextField.getVersion() + " - contents: " + event.getProperty().getValue().toString());
             }
-        });    
-        
+        });
         Button button = new Button("Hit server");
         addComponents(button);
+        setExpandRatio(ckEditorTextField, 0);
+        setExpandRatio(button, 0);
+        addComponents(new Label("x"));
+        
 	}
 }
