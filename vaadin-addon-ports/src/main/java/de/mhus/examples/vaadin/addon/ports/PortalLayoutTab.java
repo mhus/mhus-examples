@@ -93,7 +93,7 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
     }
     
     private void createMiscContents() {
-        for (int i = 0; i < 2; ++i) {
+        for (int i = 0; i < 5; ++i) {
         	
         	Label content = new Label("Demo Content");
             Portlet portlet = miscPortal.portletFor(content);
@@ -113,6 +113,12 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
             header.setComponentAlignment(caption, Alignment.MIDDLE_LEFT);
             header.setComponentAlignment(filterType, Alignment.MIDDLE_LEFT);
             portlet.setHeaderComponent(header);
+            
+            if (i == 4) {
+            	content.setCaption("Locked");
+            	portlet.setLocked(true);
+            }
+            
         }
     }
 

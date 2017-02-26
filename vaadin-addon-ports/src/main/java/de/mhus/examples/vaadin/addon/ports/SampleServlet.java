@@ -9,7 +9,7 @@ import aQute.bnd.annotation.component.Component;
 
 
 @Component(provide = Servlet.class, properties = { "alias=/vaadinaddons" }, name="VaadinAddonSample",servicefactory=true)
-@VaadinServletConfiguration(ui=SampleUI.class, productionMode=true)
+@VaadinServletConfiguration(ui=SampleUI.class, productionMode=false)
 public class SampleServlet extends VaadinServlet {
 
 	static {

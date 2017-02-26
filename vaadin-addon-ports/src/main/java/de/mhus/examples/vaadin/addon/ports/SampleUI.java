@@ -27,7 +27,7 @@ import com.vaadin.ui.VerticalLayout;
  */
 @Theme("vaadinaddons")
 @Widgetset("de.mhus.examples.vaadin.addon.ports.MyAppWidgetset")
-@Push
+//@Push
 public class SampleUI extends UI {
 
 	private static final long serialVersionUID = 1L;
@@ -59,12 +59,12 @@ public class SampleUI extends UI {
 		} catch (Throwable t) {
 			t.printStackTrace();
 		}
-		tabs.addTab(new PortalLayoutTab(), "PortalLayot");
+		tabs.addTab(new PortalLayoutTab(), "PortalLayout");
 		tabs.addTab(new SliderPanelTab(), "SliderPanel");
 		tabs.addTab(new FlatSelectTab(), "Flatselect");
 		tabs.addTab(new LabelButtonTab(), "LabelButton");
 		tabs.addTab(new ContextMenuButtonTab(), "ContextMenu");
-		tabs.addTab(new PushTab(), "Push");
+//		tabs.addTab(new PushTab(), "Push");
 		tabs.addTab(new RefresherTab(), "Refresher");
 		tabs.addTab(new CKEditorTab(), "CKEditor");
 		
