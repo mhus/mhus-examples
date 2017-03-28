@@ -1,7 +1,5 @@
 package de.mhus.example.lr7.portlet;
 
-import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
-
 import de.mhus.lib.liferay.portlet.LiferayMVCPortlet;
 
 import javax.portlet.Portlet;

@@ -11,7 +11,7 @@ cp ~/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.5/jackson-core-asl
 cp ~/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.5/jackson-mapper-asl-1.9.5.jar deploy/
 
 # Ported libs
-cp ~/.m2/repository/de/mhus/ports/mhus-cglib/1.3.1-SNAPSHOT/mhus-cglib-1.3.1-SNAPSHOT.jar
+cp ~/.m2/repository/de/mhus/ports/mhus-cglib/1.3.1-SNAPSHOT/mhus-cglib-1.3.1-SNAPSHOT.jar deploy/
 
 # mhu-lib
 cp ~/.m2/repository/de/mhus/lib/mhu-lib-annotations/3.3.1-SNAPSHOT/mhu-lib-annotations-3.3.1-SNAPSHOT.jar deploy/
