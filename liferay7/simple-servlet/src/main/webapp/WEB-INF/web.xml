@@ -10,11 +10,11 @@
 	    <servlet-class>de.mhus.lib.liferay.MPortalDelegateServlet</servlet-class>
 	    <init-param>
 	        <param-name>servlet-class</param-name>
-	        <param-value>de.hfo.portal.rest.RestServlet</param-value>
+	        <param-value>de.mhus.example.lr7.servlet.SampleServlet</param-value>
 	    </init-param>
 	    <init-param>
 	        <param-name>sub-context</param-name>
-	        <param-value>rest</param-value>
+	        <param-value>sample</param-value>
 	    </init-param> 
 	    <load-on-startup>1</load-on-startup>
 	</servlet>
