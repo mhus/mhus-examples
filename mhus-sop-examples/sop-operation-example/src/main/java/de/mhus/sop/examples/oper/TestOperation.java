@@ -12,6 +12,7 @@ import de.mhus.lib.core.strategy.OperationDescription;
 import de.mhus.lib.core.strategy.OperationResult;
 import de.mhus.lib.core.strategy.Successful;
 import de.mhus.lib.core.strategy.TaskContext;
+import de.mhus.lib.form.definition.FmText;
 
 @Component
 public class TestOperation extends AbstractOperation implements Operation {
@@ -25,7 +26,8 @@ public class TestOperation extends AbstractOperation implements Operation {
 	@Override
 	protected OperationDescription createDescription() {
 		return new OperationDescription(this,"Test", new DefRoot(
-		
+				new FmText("firstname", "First name", "Insert first name"),
+				new FmText("familyname", "Family name", "Insert family name")
 				));
 	}
 
