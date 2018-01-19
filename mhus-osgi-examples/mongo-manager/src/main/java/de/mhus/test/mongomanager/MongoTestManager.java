@@ -30,6 +30,7 @@ public class MongoTestManager extends MoManagerServiceImpl {
 		list.add(TestPerson.class);
 		list.add(TestStore.class);
 		list.add(TestBook.class);
+		list.add(TestMetadata.class);
 	}
 
 }
