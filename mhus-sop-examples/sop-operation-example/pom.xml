@@ -51,7 +51,38 @@
                     </instructions>
                 </configuration>
             </plugin>
+	        <plugin>
+	            <groupId>de.mhus.ports.karaf.tooling</groupId>
+	            <artifactId>karaf-services-maven-plugin</artifactId>
+	           <configuration>
+	             <artifactInclude>.*mhu.*</artifactInclude>
+	           </configuration>
+	        </plugin>
+            
         </plugins>
+        
+	   	<pluginManagement>
+			<plugins>
+                <plugin>
+                    <groupId>de.mhus.ports.karaf.tooling</groupId>
+                    <artifactId>karaf-services-maven-plugin</artifactId>
+                    <version>4.0.10</version>
+                    <executions>
+                        <execution>
+                            <id>service-metadata-generate</id>
+                            <phase>process-classes</phase>
+                            <goals>
+                                <goal>service-metadata-generate</goal>
+                            </goals>
+                            <configuration>
+                            	<artifactInclude>.*mhu.*</artifactInclude>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+			</plugins>    	
+    	</pluginManagement>
+        
     </build>
 
 	<dependencies>
@@ -65,12 +96,12 @@
         	<artifactId>mhu-lib-core</artifactId>
         	<version>${mhulib.version}</version>
         </dependency>
-<dependency>
-<groupId>de.mhus.osgi</groupId>
-<artifactId>mhu-sop-api</artifactId>
-<version>${sop.version}</version>
-<type>bundle</type>
-</dependency>
+		<dependency>
+			<groupId>de.mhus.osgi</groupId>
+			<artifactId>mhu-sop-api</artifactId>
+			<version>${sop.version}</version>
+			<type>bundle</type>
+		</dependency>
 	
 		<dependency>
             <groupId>biz.aQute</groupId>
