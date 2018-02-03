@@ -2,10 +2,12 @@ package de.mhus.sop.examples.oper;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 
 import aQute.bnd.annotation.component.Component;
 import de.mhus.lib.core.MDate;
 import de.mhus.lib.core.strategy.Operation;
+import de.mhus.lib.core.strategy.OperationDescription;
 import de.mhus.lib.core.strategy.OperationToIfcProxy;
 import de.mhus.lib.core.util.Version;
 import de.mhus.lib.karaf.services.SimpleServiceIfc;
@@ -41,6 +43,11 @@ public class TestIfcOperation extends OperationToIfcProxy implements SimpleServi
 	@Override
 	public void doSimpleServiceCommand(String cmd, Object... param) {
 		System.out.println(cmd + ": " + Arrays.deepToString(param));
+	}
+
+	@Override
+	protected void initOperationDescription(HashMap<String, String> parameters) {
+		parameters.put(OperationDescription.TAGS, "test");
 	}
 
 }
