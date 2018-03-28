@@ -67,6 +67,7 @@ public class SampleUI extends UI {
 //		tabs.addTab(new PushTab(), "Push");
 		tabs.addTab(new RefresherTab(), "Refresher");
 		tabs.addTab(new CKEditorTab(), "CKEditor");
+		tabs.addTab(new MhuTableTab(), "MhusTable");
 		
 	}
 

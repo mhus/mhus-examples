@@ -227,6 +227,13 @@
 			<version>${ports.version}</version>
         </dependency>
         
+        <dependency>
+        	<groupId>de.mhus.lib</groupId>
+        	<artifactId>mhu-lib-vaadin</artifactId>
+        	<version>${mhulib.version}</version>
+        </dependency>
+        
+        
     </dependencies>
       
 </project>
