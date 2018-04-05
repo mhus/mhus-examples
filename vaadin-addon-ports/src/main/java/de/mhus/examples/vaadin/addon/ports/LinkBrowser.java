@@ -9,7 +9,10 @@ import com.vaadin.ui.VerticalLayout;
 
 public class LinkBrowser extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
+
 	private Object funcNum;
+	@SuppressWarnings("unused")
 	private Object lang;
 
 	public LinkBrowser() {
@@ -29,6 +32,7 @@ public class LinkBrowser extends VerticalLayout implements Component {
 		{
 			Button b = new Button("Link 1");
 			b.addClickListener(new Button.ClickListener() {
+				private static final long serialVersionUID = 1L;
 				
 				@Override
 				public void buttonClick(ClickEvent event) {

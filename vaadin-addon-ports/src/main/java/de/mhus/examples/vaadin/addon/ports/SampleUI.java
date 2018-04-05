@@ -7,7 +7,6 @@ import org.vaadin.easyuploads.ImagePreviewField;
 import org.vaadin.easyuploads.MultiFileUpload;
 import org.vaadin.easyuploads.UploadField;
 
-import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinRequest;

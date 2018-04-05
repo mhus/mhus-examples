@@ -8,6 +8,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
 public class PushTab extends VerticalLayout {
+	private static final long serialVersionUID = 1L;
 
 	private Timer timer;
 	private Label time;

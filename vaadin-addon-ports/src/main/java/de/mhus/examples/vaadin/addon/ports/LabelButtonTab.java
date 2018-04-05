@@ -6,6 +6,8 @@ import com.vaadin.ui.VerticalLayout;
 
 public class LabelButtonTab extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
+
 	public LabelButtonTab() {
 		
 		setSpacing(true);

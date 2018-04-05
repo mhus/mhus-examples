@@ -38,7 +38,6 @@
             <plugin>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-maven-plugin</artifactId>
-                <version>${vaadin.version}</version>
                 <configuration>
                     <extraJvmArgs>-Xmx512M -Xss1024k</extraJvmArgs>
                     <webappDirectory>${basedir}/target/classes/VAADIN/widgetsets</webappDirectory>
@@ -162,7 +161,7 @@
         </dependency>
         <dependency>
         	<groupId>de.mhus.osgi</groupId>
-        	<artifactId>mhu-osgi-vaadinosgibridge</artifactId>
+        	<artifactId>mhu-osgi-vaadinbridge</artifactId>
         	<version>${osgitools.version}</version>
         	<type>bundle</type>
         </dependency>

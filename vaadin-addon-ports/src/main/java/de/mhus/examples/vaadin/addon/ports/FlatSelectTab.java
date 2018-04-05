@@ -14,6 +14,7 @@ import com.vaadin.ui.VerticalLayout;
 
 public class FlatSelectTab extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
 	public FlatSelectTab() {
         // Initialize our new UI component
 		setSizeFull();
@@ -88,6 +89,7 @@ public class FlatSelectTab extends VerticalLayout implements Component {
 	        container.addComponent(b);
 	        
 	        component.addClickListener(new Button.ClickListener() {
+	        	private static final long serialVersionUID = 1L;
 				
 				@Override
 				public void buttonClick(ClickEvent event) {

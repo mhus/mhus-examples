@@ -1,7 +1,5 @@
 package de.mhus.examples.vaadin.addon.ports;
 
-import java.util.UUID;
-
 import de.mhus.lib.annotations.vaadin.Column;
 
 public class MhuTableItem {

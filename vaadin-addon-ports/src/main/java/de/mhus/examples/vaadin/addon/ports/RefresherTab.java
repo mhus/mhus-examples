@@ -7,6 +7,7 @@ import com.vaadin.ui.Label;
 import com.vaadin.ui.VerticalLayout;
 
 public class RefresherTab extends VerticalLayout {
+	private static final long serialVersionUID = 1L;
 
 	private Refresher refresher;
 	private Label time;
@@ -15,7 +16,8 @@ public class RefresherTab extends VerticalLayout {
 		refresher = new Refresher();
 		refresher.setRefreshInterval(1000);
 		refresher.addListener(new Refresher.RefreshListener() {
-			
+			private static final long serialVersionUID = 1L;
+
 			@Override
 			public void refresh(Refresher source) {
 				doTick();

@@ -13,6 +13,7 @@ import com.vaadin.ui.VerticalLayout;
 
 public class CKEditorTab extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
 	public CKEditorTab() {
 		final String editorInitialValue = 
                 "<p>Thanks TinyMCEEditor for getting us started on the CKEditor integration.</p>\n\n<h1>Like TinyMCEEditor said, &quot;Vaadin rocks!&quot;</h1>\n\n<h1>And CKEditor is no slouch either.</h1>\n";
@@ -34,7 +35,9 @@ public class CKEditorTab extends VerticalLayout implements Component {
         
         ckEditorTextField.setValue(editorInitialValue);
         ckEditorTextField.addValueChangeListener(new Property.ValueChangeListener() {
-            public void valueChange(ValueChangeEvent event) {
+        	private static final long serialVersionUID = 1L;
+            @Override
+			public void valueChange(ValueChangeEvent event) {
                 Notification.show("CKEditor v" + ckEditorTextField.getVersion() + " - contents: " + event.getProperty().getValue().toString());
             }
         });

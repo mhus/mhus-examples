@@ -37,9 +37,10 @@
     </modules>
 
     <properties>
-		<mhulib.version>3.3.2-SNAPSHOT</mhulib.version>
-		<ports.version>3.3.2-SNAPSHOT</ports.version>
-		<osgitools.version>1.3.2-SNAPSHOT</osgitools.version>
+		<mhulib.version>3.3.3</mhulib.version>
+		<ports.version>1.3.3</ports.version>
+		<osgitools.version>1.3.3</osgitools.version>
+		
         <scr.packages>*</scr.packages>
         <felix.scr.version>1.6.0</felix.scr.version>
         <karaf.version>4.0.10</karaf.version>

@@ -9,6 +9,8 @@ import com.vaadin.ui.VerticalLayout;
 
 public class AceEditorTab extends VerticalLayout {
 
+	private static final long serialVersionUID = 1L;
+
 	public AceEditorTab() {
 		AceEditor editor = new AceEditor();
 		editor.setSizeFull();

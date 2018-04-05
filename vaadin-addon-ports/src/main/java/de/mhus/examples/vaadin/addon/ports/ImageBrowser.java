@@ -9,7 +9,10 @@ import com.vaadin.ui.VerticalLayout;
 
 public class ImageBrowser extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
+	
 	private String funcNum;
+	@SuppressWarnings("unused")
 	private String lang;
 
 	public ImageBrowser() {
@@ -30,6 +33,7 @@ public class ImageBrowser extends VerticalLayout implements Component {
 		{
 			Button b = new Button("Image 1");
 			b.addClickListener(new Button.ClickListener() {
+				private static final long serialVersionUID = 1L;
 				
 				@Override
 				public void buttonClick(ClickEvent event) {

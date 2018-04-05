@@ -11,6 +11,8 @@ import com.vaadin.ui.VerticalLayout;
 
 public class ContextMenuButtonTab extends VerticalLayout implements Component {
 
+	private static final long serialVersionUID = 1L;
+	@SuppressWarnings("unused")
 	public ContextMenuButtonTab() {
 		Button b = new Button("Click");
 		
@@ -33,6 +35,7 @@ public class ContextMenuButtonTab extends VerticalLayout implements Component {
 		
 		
 		b.addClickListener(new Button.ClickListener() {
+			private static final long serialVersionUID = 1L;
 			
 			@Override
 			public void buttonClick(ClickEvent event) {

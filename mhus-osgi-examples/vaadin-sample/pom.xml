@@ -161,8 +161,8 @@
         </dependency>
         <dependency>
         	<groupId>de.mhus.osgi</groupId>
-        	<artifactId>mhu-osgi-vaadinosgibridge</artifactId>
-        	<version>${project.version}</version>
+        	<artifactId>mhu-osgi-vaadinbridge</artifactId>
+        	<version>${osgitools.version}</version>
         	<type>bundle</type>
         </dependency>
     </dependencies>

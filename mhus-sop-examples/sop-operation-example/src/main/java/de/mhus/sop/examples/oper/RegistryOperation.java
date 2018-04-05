@@ -13,7 +13,6 @@ import de.mhus.lib.core.strategy.OperationResult;
 import de.mhus.lib.core.strategy.Successful;
 import de.mhus.lib.core.strategy.TaskContext;
 import de.mhus.lib.core.util.Version;
-import de.mhus.osgi.sop.api.SopApi;
 import de.mhus.osgi.sop.api.adb.AdbApi;
 import de.mhus.osgi.sop.api.model.Register;
 

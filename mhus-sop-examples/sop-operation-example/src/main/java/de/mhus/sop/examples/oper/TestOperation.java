@@ -1,10 +1,6 @@
 package de.mhus.sop.examples.oper;
 
-import java.util.Date;
-
 import aQute.bnd.annotation.component.Component;
-import de.mhus.lib.adb.query.Db;
-import de.mhus.lib.core.MApi;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.core.strategy.AbstractOperation;
 import de.mhus.lib.core.strategy.Operation;

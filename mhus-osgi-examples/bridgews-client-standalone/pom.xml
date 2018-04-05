@@ -60,7 +60,7 @@
         <dependency>
         	<groupId>de.mhus.osgi</groupId>
         	<artifactId>mhu-osgi-jwsclient</artifactId>
-        	<version>${project.version}</version>
+        	<version>${osgitools.version}</version>
         </dependency>
         <dependency>
         	<groupId>de.mhus.lib</groupId>

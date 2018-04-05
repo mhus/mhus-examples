@@ -27,6 +27,8 @@ import com.vaadin.ui.VerticalLayout;
 
 public class JFreeChartTab extends VerticalLayout {
 
+	private static final long serialVersionUID = 1L;
+
 
 	public JFreeChartTab() {
 		setSpacing(true);

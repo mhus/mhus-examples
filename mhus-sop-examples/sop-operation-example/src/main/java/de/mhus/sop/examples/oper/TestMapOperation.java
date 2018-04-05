@@ -3,8 +3,6 @@ package de.mhus.sop.examples.oper;
 import java.util.Date;
 
 import aQute.bnd.annotation.component.Component;
-import de.mhus.lib.adb.query.Db;
-import de.mhus.lib.core.MApi;
 import de.mhus.lib.core.MDate;
 import de.mhus.lib.core.MSystem;
 import de.mhus.lib.core.definition.DefRoot;

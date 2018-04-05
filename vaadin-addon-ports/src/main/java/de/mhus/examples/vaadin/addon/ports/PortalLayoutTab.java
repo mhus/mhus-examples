@@ -17,8 +17,11 @@ import com.vaadin.ui.UI;
 
 public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener, PortletCollapseEvent.Listener {
 	
+	private static final long serialVersionUID = 1L;
+
     public class DemoPortal extends StackPortalLayout {
         
+    	private static final long serialVersionUID = 1L;
         public DemoPortal() {
             setWidth("100%");
             setHeight("100%");
@@ -29,6 +32,7 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
     }
     
     private final PortalBase videoPortal = new DemoPortal() {
+    	private static final long serialVersionUID = 1L;
         @Override
         public Portlet portletFor(Component c) {
             c.setHeight("300px");
@@ -39,6 +43,7 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
     };
     
     private final PortalBase imagePortal = new DemoPortal() {
+    	private static final long serialVersionUID = 1L;
         @Override
         public Portlet portletFor(Component c/*, int position*/) {
             setWidth("100%");
@@ -53,6 +58,7 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
     };
     
     private final PortalBase miscPortal = new DemoPortal()  {
+    	private static final long serialVersionUID = 1L;
         @Override
         public Portlet portletFor(Component c/*, int position*/) {
             Portlet p = super.portletFor(c/*, position*/);
@@ -138,12 +144,14 @@ public class PortalLayoutTab extends Panel implements PortletCloseEvent.Listener
 
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void portletCollapseStateChanged(PortletCollapseEvent event) {
         UI.getCurrent().showNotification(event.getPortlet().getParent().getCaption() + "collapsed " + event.getPortlet().isCollapsed());
     }
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     public void portletClosed(PortletCloseEvent event) {
     	UI.getCurrent().showNotification(event.getPortlet().getParent().getCaption() + "closed");
     }

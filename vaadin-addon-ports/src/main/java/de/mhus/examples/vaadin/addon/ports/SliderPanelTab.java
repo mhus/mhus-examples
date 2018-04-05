@@ -30,6 +30,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.renderers.DateRenderer;
 
 public class SliderPanelTab extends Panel implements Component {
+	private static final long serialVersionUID = 1L;
 
 	private static final String LOREM_IPSUM = "Lorem ipsum dolor sit amet,consetetur sadipscing elitr, "
 	        + "sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.";
@@ -109,6 +110,7 @@ public class SliderPanelTab extends Panel implements Component {
         contentLabel.setSizeFull();
 
         contentLabel.addComponent(new Button("schedule toggle first-top-slider", new Button.ClickListener() {
+        	private static final long serialVersionUID = 1L;
 
             @Override
             public void buttonClick(final Button.ClickEvent event) {
@@ -132,7 +134,7 @@ public class SliderPanelTab extends Panel implements Component {
         
         
         ComboBox simpleCombo = new ComboBox("Combo");
-        simpleCombo.addItems(SliderMode.values());
+        simpleCombo.addItems((Object[])SliderMode.values());
         rightDummyContent.addComponent(simpleCombo);
         rightDummyContent.addComponent(new Label("vaadin's combo creates an inner popup that is also get catched by autoCollapse detection"));
         rightDummyContent.addComponent(genGrid());
@@ -174,6 +176,7 @@ public class SliderPanelTab extends Panel implements Component {
         
         Page.getCurrent().setTitle("SliderPanel Sample");
         Page.getCurrent().addBrowserWindowResizeListener(new BrowserWindowResizeListener() {
+        	private static final long serialVersionUID = 1L;
 			
 			@Override
 			public void browserWindowResized(BrowserWindowResizeEvent event) {
@@ -228,6 +231,7 @@ public class SliderPanelTab extends Panel implements Component {
         VerticalLayout component = new VerticalLayout(htmlDummy);
         component.setExpandRatio(htmlDummy, 1);
         component.addComponent(new Button(title, new Button.ClickListener() {
+        	private static final long serialVersionUID = 1L;
             @Override
             public void buttonClick(final ClickEvent event) {
                 Notification.show("clicked: " + title, Type.HUMANIZED_MESSAGE);

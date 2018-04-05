@@ -64,8 +64,8 @@
         </dependency>
 	    <dependency>
     		<groupId>de.mhus.osgi</groupId>
-    		<artifactId>mhu-osgi-jwsosgibridge</artifactId>
-    		<version>${project.version}</version>
+    		<artifactId>mhu-osgi-jwsbridge</artifactId>
+    		<version>${osgitools.version}</version>
     		<type>bundle</type>
     	</dependency>
 	
