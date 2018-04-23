@@ -8,6 +8,7 @@ import de.mhus.lib.core.vault.DefaultEntry;
 import de.mhus.lib.core.vault.MVault;
 import de.mhus.lib.core.vault.MutableVaultSource;
 import de.mhus.lib.core.vault.VaultSource;
+import de.mhus.lib.errors.MException;
 
 @Component(provide=VaultSource.class)
 public class ExampleVaultSource extends MutableVaultSource {
@@ -42,8 +43,12 @@ public class ExampleVaultSource extends MutableVaultSource {
 	@Override
 	public void doLoad() throws IOException {
 		entries.clear();
-		addEntry(new DefaultEntry(UUID.fromString("c647a51e-1ca2-4c01-9b6d-27465b8b6c7a"),MVault.TYPE_RSA_PRIVATE_KEY,"Sample RSA 256 Private Key",key256));
-		addEntry(new DefaultEntry(UUID.fromString("2ed0a3fc-7335-48cc-8517-06163be825f8"),MVault.TYPE_TEXT,"Sample Goethe Secret",abendlied));
+		try {
+			addEntry(new DefaultEntry(UUID.fromString("c647a51e-1ca2-4c01-9b6d-27465b8b6c7a"),MVault.TYPE_RSA_PRIVATE_KEY,"Sample RSA 256 Private Key",key256));
+			addEntry(new DefaultEntry(UUID.fromString("2ed0a3fc-7335-48cc-8517-06163be825f8"),MVault.TYPE_TEXT,"Sample Goethe Secret",abendlied));
+		} catch (MException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

@@ -14,7 +14,7 @@ import de.mhus.lib.core.strategy.Successful;
 import de.mhus.lib.core.strategy.TaskContext;
 import de.mhus.lib.core.util.Version;
 import de.mhus.osgi.sop.api.adb.AdbApi;
-import de.mhus.osgi.sop.api.model.Register;
+import de.mhus.osgi.sop.api.model.SopRegister;
 
 @Component
 public class RegistryOperation extends AbstractOperation implements Operation {
@@ -23,9 +23,9 @@ public class RegistryOperation extends AbstractOperation implements Operation {
 	protected OperationResult doExecute2(TaskContext context) throws Exception {
 		log().i("Execute",context.getParameters());
 		
-		MApi.lookup(AdbApi.class).getManager().inject(new Register("ping", new Date().toString(), "" , new Date().toString(), null)).save();
+		MApi.lookup(AdbApi.class).getManager().inject(new SopRegister("ping", new Date().toString(), "" , new Date().toString(), null)).save();
 		
-		for (Register obj : MApi.lookup(AdbApi.class).getManager().getByQualification(Db.query(Register.class).eq(Register::getName, "ping")))
+		for (SopRegister obj : MApi.lookup(AdbApi.class).getManager().getByQualification(Db.query(SopRegister.class).eq(SopRegister::getName, "ping")))
 			System.out.println(obj);
 		
 		return new Successful(this);

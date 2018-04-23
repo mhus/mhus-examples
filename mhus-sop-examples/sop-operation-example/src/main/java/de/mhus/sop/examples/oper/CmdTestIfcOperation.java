@@ -6,7 +6,7 @@ import org.apache.karaf.shell.api.action.Command;
 import org.apache.karaf.shell.api.action.lifecycle.Service;
 
 import de.mhus.lib.core.MApi;
-import de.mhus.lib.karaf.services.SimpleServiceIfc;
+import de.mhus.osgi.services.SimpleServiceIfc;
 import de.mhus.osgi.sop.api.operation.OperationAddress;
 import de.mhus.osgi.sop.api.operation.OperationApi;
 import de.mhus.osgi.sop.api.operation.OperationDescriptor;

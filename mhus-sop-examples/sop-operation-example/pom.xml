@@ -102,6 +102,11 @@
 			<version>${sop.version}</version>
 			<type>bundle</type>
 		</dependency>
+		<dependency>
+        	<groupId>de.mhus.osgi</groupId>
+        	<artifactId>mhu-osgi-services</artifactId>
+        	<version>${osgitools.version}</version>
+        </dependency>
 	
 		<dependency>
             <groupId>biz.aQute</groupId>

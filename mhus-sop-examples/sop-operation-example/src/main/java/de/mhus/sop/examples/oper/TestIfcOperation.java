@@ -10,7 +10,7 @@ import de.mhus.lib.core.strategy.Operation;
 import de.mhus.lib.core.strategy.OperationDescription;
 import de.mhus.lib.core.strategy.OperationToIfcProxy;
 import de.mhus.lib.core.util.Version;
-import de.mhus.lib.karaf.services.SimpleServiceIfc;
+import de.mhus.osgi.services.SimpleServiceIfc;
 
 @Component(provide=Operation.class,immediate=true)
 public class TestIfcOperation extends OperationToIfcProxy implements SimpleServiceIfc {

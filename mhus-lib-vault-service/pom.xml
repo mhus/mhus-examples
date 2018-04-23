@@ -26,7 +26,7 @@
   <description>OSGi SOP Examples</description>
 
     <properties>
-		<mhulib.version>3.3.2-SNAPSHOT</mhulib.version>
+		<mhulib.version>3.3.4-SNAPSHOT</mhulib.version>
 		
         <scr.packages>*</scr.packages>
         <felix.scr.version>1.6.0</felix.scr.version>

@@ -2,8 +2,8 @@ package de.mhus.sop.examples.oper;
 
 import aQute.bnd.annotation.component.Component;
 import de.mhus.lib.core.cfg.CfgString;
-import de.mhus.lib.karaf.services.SimpleService;
-import de.mhus.lib.karaf.services.SimpleServiceIfc;
+import de.mhus.osgi.services.SimpleService;
+import de.mhus.osgi.services.SimpleServiceIfc;
 import de.mhus.osgi.sop.api.registry.RegistryApi;
 
 @Component(immediate=true,provide=SimpleServiceIfc.class)
