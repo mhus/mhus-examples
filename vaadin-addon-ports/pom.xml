@@ -169,61 +169,61 @@
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-easyuploads</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
 		</dependency>
         
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-aceeditor</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
 		</dependency>
 		
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-borderlayout</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
 		</dependency>
 		
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-jfreechart</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
 		</dependency>
 		
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-portallayout</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
         
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-sliderpanel</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
         
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-flatselect</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
                 
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-contextmenu</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
         
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-refresher</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
         
         <dependency>
 			<groupId>de.mhus.ports</groupId>
 			<artifactId>vaadin-ckeditor</artifactId>
-			<version>${ports.version}</version>
+			<version>${ports.vaadin.version}</version>
         </dependency>
         
         <dependency>
