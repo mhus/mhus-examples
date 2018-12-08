@@ -227,7 +227,7 @@ import de.mhus.lib.core.definition.DefAttribute;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.errors.MException;
 import de.mhus.lib.form.DummyDataSource;
-import de.mhus.lib.form.Form;
+import de.mhus.lib.form.MForm;
 import de.mhus.lib.form.ModelDataSource;
 import de.mhus.lib.form.UiComponent;
 import de.mhus.lib.form.definition.FmCheckbox;

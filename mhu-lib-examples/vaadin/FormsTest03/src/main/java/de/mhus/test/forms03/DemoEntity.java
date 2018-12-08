@@ -211,9 +211,9 @@ import de.mhus.lib.annotations.vaadin.Column;
 import de.mhus.lib.core.definition.DefAttribute;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.form.Item;
-import de.mhus.lib.form.definition.FmColumns;
+import de.mhus.lib.form.definition.FaColumns;
 import de.mhus.lib.form.definition.FmCombobox;
-import de.mhus.lib.form.definition.FmLayout50x50;
+import de.mhus.lib.form.definition.FmLayout2x50;
 import de.mhus.lib.form.definition.FmLink;
 import de.mhus.lib.form.definition.FmOptions;
 import de.mhus.lib.form.definition.FmRootLayout50x50;
@@ -276,7 +276,7 @@ public class DemoEntity {
 	public DefRoot model() {
 		return new DefRoot( 
 				new FmRootLayout50x50(),
-				new FmText("firstName","firstname=First name","Bla bla...", new FmColumns(2) ),
+				new FmText("firstName","firstname=First name","Bla bla...", new FaColumns(2) ),
 				new FmText("lastName","lastname=Last name","Bla bla..."),
 				new FmCombobox("gender", "gender=Geschlecht","Bla bla"),
 				new FmOptions("hobbies", "Hobbies", "Deine Hobbies"),

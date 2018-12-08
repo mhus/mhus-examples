@@ -208,6 +208,7 @@ import javax.servlet.annotation.WebServlet;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.GridLayout;
@@ -223,7 +224,7 @@ import de.mhus.lib.core.definition.DefAttribute;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.errors.MException;
 import de.mhus.lib.form.DummyDataSource;
-import de.mhus.lib.form.Form;
+import de.mhus.lib.form.MForm;
 import de.mhus.lib.form.ModelDataSource;
 import de.mhus.lib.form.UiComponent;
 import de.mhus.lib.form.definition.FmCheckbox;
@@ -238,6 +239,7 @@ import de.mhus.lib.vaadin.form.VaadinForm;
 
 @Title("Forms03")
 @Theme("valo")
+@Widgetset(value = "com.vaadin.v7.Vaadin7WidgetSet")
 public class Forms03UI extends UI {
 
 	@Override

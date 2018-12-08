@@ -207,7 +207,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import de.mhus.lib.core.util.FilterRequest;
 import de.mhus.lib.vaadin.AbstractBeanListEditor;
 
 public class DemoEditor extends AbstractBeanListEditor<DemoEntity>{
@@ -264,6 +263,11 @@ public class DemoEditor extends AbstractBeanListEditor<DemoEntity>{
 	@Override
 	protected Object getId(DemoEntity entry) {
 		return entry.getId();
+	}
+
+	@Override
+	protected DemoEntity getEditableTarget(Object id) {
+		return getTarget(new DemoEntity(getTarget(id)));
 	}
 
 }
