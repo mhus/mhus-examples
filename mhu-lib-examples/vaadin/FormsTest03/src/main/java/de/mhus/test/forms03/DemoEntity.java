@@ -211,6 +211,8 @@ import de.mhus.lib.annotations.vaadin.Column;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.form.Item;
 import de.mhus.lib.form.definition.FaColumns;
+import de.mhus.lib.form.definition.FaFullWidth;
+import de.mhus.lib.form.definition.FaShowInformationPanel;
 import de.mhus.lib.form.definition.FmCombobox;
 import de.mhus.lib.form.definition.FmLink;
 import de.mhus.lib.form.definition.FmOptions;
@@ -273,6 +275,7 @@ public class DemoEntity {
 	@ALayoutModel
 	public DefRoot model() {
 		return new DefRoot( 
+				new FaShowInformationPanel(),
 				new FmRootLayout50x50(),
 				new FmText("firstName","firstname=First name","Bla bla...", new FaColumns(2) ),
 				new FmText("lastName","lastname=Last name","Bla bla..."),
