@@ -211,6 +211,8 @@ import de.mhus.lib.vaadin.AbstractBeanListEditor;
 
 public class DemoEditor extends AbstractBeanListEditor<DemoEntity>{
 
+	private static final long serialVersionUID = 1L;
+
 	public DemoEditor(Class<DemoEntity> beanClass, String schema) {
 		super(beanClass, schema);
 		setNeedSortUpdate(true);

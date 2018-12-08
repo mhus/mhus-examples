@@ -208,12 +208,10 @@ import java.util.Set;
 
 import de.mhus.lib.annotations.form.ALayoutModel;
 import de.mhus.lib.annotations.vaadin.Column;
-import de.mhus.lib.core.definition.DefAttribute;
 import de.mhus.lib.core.definition.DefRoot;
 import de.mhus.lib.form.Item;
 import de.mhus.lib.form.definition.FaColumns;
 import de.mhus.lib.form.definition.FmCombobox;
-import de.mhus.lib.form.definition.FmLayout2x50;
 import de.mhus.lib.form.definition.FmLink;
 import de.mhus.lib.form.definition.FmOptions;
 import de.mhus.lib.form.definition.FmRootLayout50x50;

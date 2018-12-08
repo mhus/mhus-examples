@@ -207,6 +207,8 @@ import de.mhus.lib.vaadin.container.MhuBeanItemContainer;
 
 public class MyDataContainer extends MhuBeanItemContainer<MyData> {
 
+	private static final long serialVersionUID = 1L;
+
 	public MyDataContainer() throws IllegalArgumentException {
 		super(MyData.class);
 	}

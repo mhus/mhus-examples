@@ -204,48 +204,27 @@
 package de.mhus.test.forms04;
 
 import java.util.LinkedList;
-import java.util.Map;
 
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
-import com.vaadin.ui.GridLayout;
-import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.Notification;
-import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.VerticalSplitPanel;
 
-import de.mhus.lib.core.MCast;
-import de.mhus.lib.core.definition.DefAttribute;
-import de.mhus.lib.core.definition.DefRoot;
-import de.mhus.lib.errors.MException;
-import de.mhus.lib.form.DummyDataSource;
-import de.mhus.lib.form.MForm;
-import de.mhus.lib.form.ModelDataSource;
-import de.mhus.lib.form.UiComponent;
-import de.mhus.lib.form.definition.FmCheckbox;
-import de.mhus.lib.form.definition.FmDate;
-import de.mhus.lib.form.definition.FmNumber;
-import de.mhus.lib.form.definition.FmRichText;
-import de.mhus.lib.form.definition.FmText;
-import de.mhus.lib.form.definition.FmTextArea;
-import de.mhus.lib.form.definition.FmDate.FORMATS;
-import de.mhus.lib.form.definition.FmNumber.TYPES;
 import de.mhus.lib.vaadin.ExpandingTable;
 import de.mhus.lib.vaadin.MhuTable;
-import de.mhus.lib.vaadin.form.VaadinForm;
 
 @Title("Forms04")
 @Theme("valo")
+@Widgetset(value = "com.vaadin.v7.Vaadin7WidgetSet")
+@SuppressWarnings("deprecation")
 public class Forms04UI extends UI {
 
+	private static final long serialVersionUID = 1L;
 	private MyDataContainer data;
 
 	@Override
@@ -322,5 +301,6 @@ public class Forms04UI extends UI {
 	@WebServlet(urlPatterns = "/*")
     @VaadinServletConfiguration(ui = Forms04UI.class, productionMode = false)
     public static class MyUIServlet extends VaadinServlet {
+		private static final long serialVersionUID = 1L;
     }
 }
