@@ -1,4 +1,4 @@
-package de.mhus.vaadin.osgi;
+package de.mhus.examples.vaadin2;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
@@ -6,7 +6,7 @@ import javax.servlet.ServletException;
 
 import org.osgi.service.component.annotations.Component;
 
-@Component(service=Servlet.class,property= "alias=/",servicefactory=true)
+@Component(service=Servlet.class,property= "alias=/gui",servicefactory=true)
 public class VaadinServlet extends com.vaadin.flow.server.VaadinServlet {
 
     private static final long serialVersionUID = 1L;

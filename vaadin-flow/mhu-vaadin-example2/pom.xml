@@ -38,7 +38,7 @@
 					<instructions>
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${project.version}</Bundle-Version>
-						<Export-Package>de.mhus.vaadin.osgi.*;version=${project.version}</Export-Package>
+						<Export-Package>de.mhus.examples.vaadin2.*;version=${project.version}</Export-Package>
 						<Import-Package>
 							*
 						</Import-Package>

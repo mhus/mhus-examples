@@ -1,4 +1,4 @@
-package de.mhus.vaadin.osgi;
+package de.mhus.examples.vaadin2;
 
 import java.util.Date;
 
@@ -20,6 +20,7 @@ public class MainView extends VerticalLayout {
     public MainView() {
         Button button = new Button("Click me",
                 event -> {
+                    System.out.println("Clicked");
                     Notification.show("Clicked! " + new Date());
                 });
         add(button);
