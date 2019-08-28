@@ -25,12 +25,20 @@ install -s mvn:com.vaadin/flow-client/2.0.5
 install -s mvn:com.vaadin/flow-data/2.0.5
 install -s mvn:com.vaadin/flow-push/2.0.5
 install -s mvn:com.vaadin/flow-html-components/2.0.5
+install -s mvn:com.vaadin/vaadin-tabs-flow/2.0.2
+install -s mvn:com.vaadin/vaadin-app-layout-flow/2.0.2
 # theme
 install -s mvn:com.vaadin/vaadin-lumo-theme/2.0.5
 # components
 install -s mvn:com.vaadin/vaadin-button-flow/2.0.1
 install -s mvn:com.vaadin/vaadin-notification-flow/2.0.0
 install -s mvn:com.vaadin/vaadin-ordered-layout-flow/2.0.0
+install -s mvn:com.vaadin/vaadin-checkbox-flow/2.0.0
+install -s mvn:com.vaadin/vaadin-combo-box-flow/3.0.2
+install -s mvn:com.vaadin/vaadin-context-menu-flow/3.0.2
+install -s mvn:org.apache.commons/commons-lang3/3.7
+install -s mvn:com.vaadin/vaadin-grid-flow/4.0.4
+install -s mvn:com.vaadin/vaadin-dialog-flow/2.0.0
 
 # app
 install -s mvn:de.mhus.example.vaadin/mhu-vaadin-example2/1.0.0-SNAPSHOT

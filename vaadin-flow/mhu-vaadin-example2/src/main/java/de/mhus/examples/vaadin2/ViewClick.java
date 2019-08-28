@@ -10,14 +10,14 @@ import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 
-@Route("")
-@PWA(name = "Project Base for Vaadin Flow", shortName = "Project Base")
+@Route("click")
+@PWA(name = "Click Vaadin Flow Route", shortName = "Click")
 @Theme(Lumo.class)
-public class MainView extends VerticalLayout {
+public class ViewClick extends VerticalLayout {
 
     private static final long serialVersionUID = 1L;
 
-    public MainView() {
+    public ViewClick() {
         Button button = new Button("Click me",
                 event -> {
                     System.out.println("Clicked");
