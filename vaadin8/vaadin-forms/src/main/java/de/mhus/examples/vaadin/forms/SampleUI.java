@@ -4,9 +4,10 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Widgetset;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
-import com.vaadin.ui.Label;
+import com.vaadin.ui.Panel;
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.UI;
+import com.vaadin.ui.VerticalLayout;
 
 /*
  * 
@@ -33,8 +34,23 @@ public class SampleUI extends UI {
 	}
 
 	private Component formEditor() {
+        BeanListEditorSample form = new BeanListEditorSample();
+        form.initUI();
+        form.setSizeFull();
+        
+        VerticalLayout layout = new VerticalLayout();
+        
+        Panel panel = new Panel(form);
+        panel.setSizeFull();
 
-        return new Label("Done");
+        layout.addComponent(panel);
+        
+        layout.setMargin(false);
+        layout.setSpacing(false);
+        layout.setSizeFull();
+        layout.setExpandRatio(panel, 1);
+
+        return layout;
     }
 
     @Override
