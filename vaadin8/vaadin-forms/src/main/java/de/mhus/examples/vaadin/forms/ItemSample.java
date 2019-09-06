@@ -30,12 +30,14 @@ public class ItemSample {
         initials = "Mr";
         name = "name" + i;
         id = UUID.randomUUID().toString();
+        description = "Description " + i;
     }
 
     public ItemSample(ItemSample org) {
         this.name = org.name;
         this.id = org.id;
         this.initials = org.initials;
+        this.description = org.description;
         // ...
     }
 
