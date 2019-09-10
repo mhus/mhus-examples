@@ -31,3 +31,12 @@ install -s mvn:de.mhus.lib/mongo-karaf-api/1.6.2-SNAPSHOT
 install -s mvn:de.mhus.lib/mongo-karaf-impl/1.6.2-SNAPSHOT
 
 install -s mvn:de.mhus.example.mongo/mhus-mongo-example1/1.0.0-SNAPSHOT
+
+
+xdb:use -g -a mo -s demo save
+
+xdb:create Employee name=Joe
+xdb:create Employee name=Alf values.color=red
+
+xdb:select Employee "\"values.color\": \"red\""
+
