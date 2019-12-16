@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jms
+spec:
+  containers:
+  - image: webcenter/activemq:5.14.3
+    name: jms
+    ports:
+      - containerPort: 8161
+        name: tcp
+        protocol: TCP
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db
+spec:
+  containers:
+  - image: mariadb:10.3.20
+    name: db
+    ports:
+      - containerPort: 3306
+        name: tcp
+        protocol: TCP
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: "password"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: karaf-core
+spec:
+  containers:
+  - image: mhus/apache-karaf:4.2.6_02
+    name: karaf-core
+    ports:
+      - containerPort: 8181
+        name: tcp
+        protocol: TCP
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: "password"
+

@@ -1,0 +1,6 @@
+
+VERSION=1.6.2
+feature:repo-add mvn:de.mhus.osgi/mhu-sop-feature/${VERSION}/xml/features
+
+feature:install openjpa3 
+feature:install mhu-sop-full
