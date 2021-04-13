@@ -204,7 +204,7 @@
 import java.io.File;
 
 import de.mhus.lib.core.IProperties;
-import de.mhus.lib.core.MConstants;
+import de.mhus.lib.core.M;
 import de.mhus.lib.core.MFile;
 import de.mhus.lib.core.MApi;
 import de.mhus.lib.core.MThread;
@@ -225,7 +225,7 @@ public class TestUpdate {
 		File f = new File("../test_config.xml");
 		if (f.exists()) f.delete();
 		
-		System.setProperty(MConstants.PROP_CONFIG_FILE , "../test_config.xml");
+		System.setProperty(M.PROP_CONFIG_FILE , "../test_config.xml");
 
 		MApi.get().getCfgManager().registerCfgInitiator("demo", new CfgInitiator() {
 			
