@@ -211,6 +211,6 @@
     parameter.mapper="de.mhus.lib.logging.parameter.MutableParameterMapper"
     log.console.redirect="true"
   >
-    <parameter.mapper name="javax.jms.Message" class="de.mhus.lib.jms.util.MessageParameterMapper" />
+    <parameter.entry.mapper name="javax.jms.Message" class="de.mhus.lib.jms.util.MessageParameterMapper" />
   </system>
 </mhus>
